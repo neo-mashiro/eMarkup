@@ -109,6 +109,8 @@ http://www.github.com/
 ### inline url
 This is the [emoji cheatsheet](https://www.webpagefx.com/tools/emoji-cheat-sheet/).
 
-### image
-![She is my wife](https://github.com/neo-mashiro/eMarkup/blob/main/resources/chizuru.png)
+### insert image with HTML
+<img src="https://github.com/neo-mashiro/eMarkup/blob/main/resources/chizuru.png" width=60% height=60%>
 
+### insert image with markdown
+![She is my wife](https://github.com/neo-mashiro/eMarkup/blob/main/resources/chizuru.png)
