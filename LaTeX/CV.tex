@@ -1,0 +1,221 @@
+% ------------------------------------------------------------------------------
+% adapted from: https://github.com/svmiller/svm-r-markdown-templates
+% ------------------------------------------------------------------------------
+\documentclass[10pt]{article}
+\usepackage{mathpazo}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in, top=0.7in, bottom=0.7in]{geometry}
+
+% underline whole line, by neo-mashiro on 2020/04/28
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{8pt}  % redefine the line height
+
+% stuff added by neo-mashiro on 2019/10/02
+\usepackage{xcolor}
+\definecolor{Navy}{rgb}{0,0,0.5}
+\definecolor{Light}{rgb}{0.7,0.7,0.7}
+\usepackage{inconsolata}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{longtable,booktabs}
+\usepackage{multirow}    % enable a table cell to span multiple rows or multiple columns
+\usepackage{siunitx}     % for numbers in a table column to be aligned at the decimal point, formatting unit and style...
+\sisetup{                % specify how many decimal places should displayed
+  round-mode = places,   % round numbers
+  round-precision = 2,   % to 2 decimal places
+}
+
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+
+\linespread{1.2}
+
+% Now begins the stuff that I added.
+% ----------------------------------
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\large\bf}
+\subsectionfont{\rmfamily\mdseries\normalsize\itshape}
+
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1em}  % changed from 1.5em to 1em by neo-mashiro on 2019/10/02
+  }
+}{
+  \end{list}
+}
+
+
+% Make parskips rather than indent with lists.
+\usepackage{parskip}
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+
+% Use fontawesome. Note: you'll need TeXLive 2015. Update.
+\usepackage{fontawesome}
+\usepackage{paratype}
+\usepackage[scale=0.95]{opensans}
+%
+%\newenvironment{mainfont}{\fontfamily{PTSans-TLF}\selectfont}{\par}
+%\newenvironment{mainfont}{\fontfamily{PTSerif-TLF}\selectfont}{\par}
+\newenvironment{mainfont}{\fontfamily{opensans-TLF}\selectfont}{\par}
+
+% Fancyhdr, as I tend to do with these personal documents.
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{
+\cfoot{\scriptsize  Wentao Lu - CV }}
+\rfoot{\scriptsize \thepage/{\hypersetup{linkcolor=black}\pageref{LastPage}}}
+
+% Always load hyperref last.
+\usepackage{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+
+\hypersetup{unicode=true,
+            pdftitle={Wentao Lu:  CV (Curriculum Vitae)},
+            pdfauthor={Wentao Lu},
+            pdfkeywords={R Markdown, academic CV, template},
+            colorlinks=true,
+            linkcolor=white,
+            citecolor=Blue,
+            urlcolor=blue,
+            breaklinks=true, bookmarks=true}
+\urlstyle{same}  % don't use monospace font for urls
+% ------------------------------------------------------------------------------
+
+\begin{document}
+\centerline{\huge \bf Wentao Lu}
+
+\vspace{2 mm}
+\hrule
+\vspace{2 mm}
+
+% url font and content modified by neo-mashiro on 2019/10/02
+% {\tt \href{mailto:wlu19@ubishops.ca}{\nolinkurl{wlu19@ubishops.ca}}} -> {\href{mailto:wlu19@ubishops.ca}{\nolinkurl{wlu19@ubishops.ca}}}
+% {\tt neo-mashiro} -> {Github}
+% \href{http://wentao-lu-90125157} -> \href{https://www.linkedin.com/in/wentao-lu-90125157}{Linkedin}
+
+%\moveleft.5\hoffset\centerline{402-92 Croissant Oxford, Sherbrooke, QC J1M2G2, Canada}
+\moveleft.5\hoffset\centerline{
+\faEnvelopeO \hspace{1 mm} \href{mailto:}{\href{mailto:neo-mashiro@hotmail.com}{\nolinkurl{neo-mashiro@hotmail.com}}} \hspace{1 mm} \faPhone \hspace{1 mm}  819-432-5642  \hspace{1 mm}  \faGithub \hspace{1 mm} \href{http://github.com/neo-mashiro}{Github} \hspace{1 mm}  \faGlobe \hspace{1 mm} \href{https://www.linkedin.com/in/wentao-lu-90125157}{Linkedin}}
+
+\vspace{2mm}
+\hrule
+% ------------------------------------------------------------------------------
+
+\begin{mainfont}
+
+\textbf{Université Bishop's} \hfill \textcolor{Navy}{\small Sherbrooke, QC, Canada, 2021.08}
+\begin{enumerate}[leftmargin=*, topsep=-2mm, itemsep=-2mm]
+  \item[] M.Sc, Computer Science, GPA 94.73/100
+\end{enumerate}
+
+\textbf{Texas {\small A\&M} University} \hfill \textcolor{Navy}{\small College Station, Texas, USA, 2014.05}
+\begin{enumerate}[leftmargin=*, topsep=-2mm, itemsep=-2mm]
+  \item[] M.Sc, Financial Econometrics, GPA 3.92/4
+\end{enumerate}
+
+\textbf{Shanghai University of Finance and Economics} \hfill \textcolor{Navy}{\small Shanghai, China, 2012.06}
+\begin{enumerate}[leftmargin=*, topsep=-2mm, itemsep=-2mm]
+  \item[] B.Sc, Mathematical Economics (Major Degree)
+  \item[] B.BA, Business Administration (Dual Degree)
+\end{enumerate}
+
+% Skills
+\vspace{3mm}
+\uline{\textbf{\textsc{\centerline{\large Technical Skills}}}\hfill}\vspace{-2mm}\\
+\begin{enumerate}[leftmargin=*, topsep=-2mm, itemsep=-2mm]
+  \item[\textbullet] Strong C/C++ programming skills, solid foundation in math, statistics and computer graphics
+  \item[\textbullet] In-depth knowledge of modern OpenGL, GLSL and physically-based rendering techniques
+  \item[\textbullet] Proficient in Oracle database, SQL and PL/SQL
+  \item[\textbullet] Experience with Unity3D, C\#, Python, R, Lua, Linux, bash, Git, RenderDoc and Visual Studio
+  \item[\textbullet] Familiar with machine learning algorithms and volumetric image processing
+  \item[\textbullet] \textbf{Certifications}: SAS certified advanced programmer, also completed 38 courses on Coursera
+  \item[\textbullet] \textbf{Languages}: English (TOEFL 104/120, GRE 328/340), Japanese (professional N1 level), Mandarin (native)
+\end{enumerate}
+
+% Open-source Work
+ \vspace{3mm}
+ \uline{\textbf{\textsc{\centerline{\large Open-Source Work}}}\hfill}\vspace{2mm}\\
+ \textbf{\href{https://github.com/neo-mashiro/sketchpad}{sketchpad} - Physically-Based 3D Renderer} \href{https://github.com/neo-mashiro/sketchpad}{\text{  }\(\lhd\)}
+ \begin{enumerate}[leftmargin=*, topsep=-2mm, itemsep=-2mm]
+   \item[] A physically-based rendering library for playing with a wide range of rendering techniques in OpenGL.\\ Main features: \textit{tiled forward rendering, distant IBL, simplified Disney BSDF (BRDF + clear coat, anisotropy, refraction and cloth), omnidirectional PCSS shadows, skeleton animation, compute shader bloom, entity-component system, first-person camera with smooth arcball control, wireframe rendering, runtime scene switching, native screen capturing.}
+ \end{enumerate}
+
+ \vspace{1mm}
+ \textbf{\href{https://github.com/neo-mashiro/GameStore}{GameStore} - Classic Python 2D Games} \href{https://github.com/neo-mashiro/GameStore}{\text{  }\(\lhd\)}
+ \begin{enumerate}[leftmargin=*, topsep=-2mm, itemsep=-2mm]
+   \item[] A collection of classic arcade games implemented using the Python kivy framework.\\ Games include: 2048, Asteroids, Memory, Pong, 15 puzzle, Blackjack and Stopwatch.
+ \end{enumerate}
+
+ \vspace{1mm}
+ \textbf{\href{https://github.com/neo-mashiro/SUFD}{SUFD} - Multi-thread Unix File Daemon in C} \href{https://github.com/neo-mashiro/SUFD}{\text{  }\(\lhd\)}
+ \begin{enumerate}[leftmargin=*, topsep=-2mm, itemsep=-2mm]
+   \item[] A simple TCP server that simulates concurrent reads and writes with synchronization in a heavy-traffic environment.\\ Supports signal handling, dynamic concurrency management, reconfiguration and replication.
+ \end{enumerate}
+
+% Employment
+\vspace{3mm}
+\uline{\textbf{\textsc{\centerline{\large Employment}}}\hfill}\vspace{2mm}\\
+\textbf{Associate Software Engineer, Manulife-Sinochem Life Insurance} \hfill \textcolor{Navy}{\small Shanghai, China, 2016.05 - 2019.09}
+\begin{enumerate}[leftmargin=*, topsep=-2mm, itemsep=-2mm]
+  \item[\textbullet] Developed and maintained the bancassurance transaction processing system built on Oracle database \& J2EE.
+  \item[\textbullet] Designed and implemented 4 subsystems for our bank partners to process their orders, underwriting and payments.
+  \item[\textbullet] Developed 4 batch modules that are used to generate and upload bank daily/monthly reconciliation reports.
+  \item[\textbullet] Discussed technical feasibility of new features with users by evaluating the impact of change on the backend system.
+  \item[\textbullet] Collaborated with external J2EE vendors to analyze system performance and troubleshoot production issues.
+\end{enumerate}
+
+\vspace{1mm}
+\textbf{Financial Advisor, Sanko Soflan Holdings} \hfill \textcolor{Navy}{\small Tokyo, Japan, 2015.06 - 2016.02}
+\begin{enumerate}[leftmargin=*, topsep=-2mm, itemsep=-2mm]
+  \item[\textbullet] Conducted site visits to newly released lands, housing and commercial properties for investment analysis.
+  \item[\textbullet] Collected and exchanged private market data with Japanese local real estate companies and small property agencies.
+  \item[\textbullet] Provided financial planning advice for overseas customers who are interested in real estate and land in Japan.
+\end{enumerate}
+
+% \vspace{1mm}
+% \textbf{\textsc{Previous Work and Achievements}}
+% \begin{enumerate}[leftmargin=*, topsep=-2mm, itemsep=-2mm]
+%   \item[] A review of consensus protocols and techniques in distributed systems. \href{https://github.com/neo-mashiro/DOC/blob/master/LaTeX/concensus.pdf}{\text{  }\(\lhd\)}
+%   \item[] Data mining of massive datasets in MongoDB. \href{https://github.com/neo-mashiro/DOC/tree/master/MongoDB%20notebooks}{\text{  }\(\lhd\)}
+%   \item[] Statistical inference and modeling practice using Rstudio. \href{https://github.com/neo-mashiro/DOC/tree/master/R%20Markdown}{\text{  }\(\lhd\)}
+%   \item[] Data structures and algorithms exercise notebooks in Python. \href{https://github.com/neo-mashiro/DOC/tree/master/algorithms}{\text{  }\(\lhd\)}
+%   \item[] Completed 40 Coursera courses in computer science with verified certificates.
+%   \item[] Certified SAS Base + Advanced programmer, prior experience with Matlab, Excel formulas and macros.
+%   \item[] Society of Actuaries (SOA) exams passed: Exam P, Exam FM.
+% \end{enumerate}
+
+% Part-time, Volunteer Work
+%\vspace{4mm}
+%\uline{\textbf{\textsc{\centerline{\large Part-time, Volunteer Work}}}\hfill}\vspace{2mm}
+%\begin{enumerate}[leftmargin=*, topsep=-2mm, itemsep=-2mm]
+%  \item[\textbullet] Delivery Driver, Chef Cao's Restaurant \hfill \textcolor{Navy}{Texas, Apr 2013 \textasciitilde\ May 2014}
+%  \item[\textbullet] Waiter and Cashier, Taste of China \hfill \textcolor{Navy}{Texas, Apr 2013 \textasciitilde\ May 2014}
+%  \item[\textbullet] Community Volunteer, \textsc{Tamu} "The Big Event" \hfill \textcolor{Navy}{Texas, Mar 2013, Mar 2014}
+%  \item[\textbullet] Teaching Assistant, Pre-College Summer Camp, \textsc{Shufe} \hfill \textcolor{Navy}{Shanghai, Jul 2012 \textasciitilde\ Aug 2012}
+%  \item[\textbullet] High School Student Tutor, \textsc{Shufe} Volunteer Club \hfill \textcolor{Navy}{Shanghai, Sep 2010 \textasciitilde\ Jun 2011}
+%\end{enumerate}
+%
+% \vspace{8mm}
+%
+% End of CV body
+% ------------------------------------------------------------------------------
+
+\end{mainfont}
+\end{document}
