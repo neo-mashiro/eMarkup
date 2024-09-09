@@ -7,9 +7,13 @@
 
 ### bold & italic
 *This text will be italic*
+
 _This will also be italic_
+
 **This text will be bold**
+
 __This will also be bold__
+
 _You **can** combine them_
 
 ### unordered list
@@ -66,7 +70,7 @@ int main()
     * inside this tag
 </details>
 
-### a collapsible section with code
+### collapsible section with code
 <details>
 <summary>Click to view code</summary>
 
@@ -106,5 +110,5 @@ http://www.github.com/
 This is the [emoji cheatsheet](https://www.webpagefx.com/tools/emoji-cheat-sheet/).
 
 ### image
-![She is maho](http://august-soft.com/daito/bnx/bnx150x600_14.jpg?)
+![She is my wife](https://github.com/neo-mashiro/eMarkup/blob/main/resources/chizuru.png)
 
