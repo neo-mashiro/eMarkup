@@ -1,2 +1,2 @@
-- [Sample elements mixed on a single webpage](https://nbviewer.jupyter.org/github/neo-mashiro/DOC/blob/master/web/index.html)
-- [Life on a piece of A4 paper](https://nbviewer.jupyter.org/github/neo-mashiro/DOC/blob/master/web/Life%20on%20A4.html)
+- [Sample elements mixed on a single webpage](https://nbviewer.org/github/neo-mashiro/eMarkup/blob/main/HTML/index.html)
+- [Life on a piece of A4 paper](https://nbviewer.org/github/neo-mashiro/eMarkup/blob/main/HTML/Life%20on%20A4.html)
